@@ -38,7 +38,7 @@ class ReviewsCarousel extends Component {
   render() {
     const {reviewsList} = this.props
     const {activeIndex} = this.state
-    const currentReviewIndex = reviewsList[activeIndex]
+    const currentReviewDetails = reviewsList[activeIndex]
 
     return (
       <div className="app-container">
@@ -55,7 +55,7 @@ class ReviewsCarousel extends Component {
               alt="left arrow"
             />
           </button>
-          {this.RenderActiveReview(currentReviewIndex)}
+          {this.RenderActiveReview(currentReviewDetails)}
           <button
             type="button"
             className="arrow-button"
